@@ -40,7 +40,7 @@ describe('Change list service', function() {
     }
   }));
 
-  describe('change list service', function() {
+  describe('change list sedrvice', function() {
     var cls = null;
     var $httpBackend = null;
     var mockWarningsData;
