@@ -53,8 +53,8 @@ describe('GraphDetailService', () => {
       edges: [
         {src: 0, dst: 0, weight: 1, $$hashKey: 'object:319'},
       ],
-        isDirected: true,
-        vertices: [
+      isDirected: true,
+      vertices: [
         {x: 283.5625, y: 72.95833587646484, label: '', $$hashKey: 'object:352'},
         {x: 281.5625, y: 182.9583282470703, label: '', $$hashKey: 'object:368'}
       ],
@@ -81,7 +81,7 @@ describe('GraphDetailService', () => {
 
     var index = 0;
 
-    var result =  {x: 175, y: 50};
+    var result = {x: 175, y: 50};
 
     expect(gds.getEdgeCentre(graph, index)).toEqual(result);
   });
