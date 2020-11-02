@@ -36,25 +36,25 @@ describe('GraphDetailService', () => {
     var graph1 = {
       isWeighted: true,
       edges: [
-      {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
-      {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
-        ],
+        {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
+        {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
+      ],
         isDirected: true,
-        vertices : [
+      vertices: [
         {x: 150, y: 50, label: '', $$hashKey: 'object:323'},
         {x: 200, y: 50, label: '', $$hashKey: 'object:324'},
         {x: 150, y: 100, label: '', $$hashKey: 'object:325'}
-        ],
-        isLabeled: false
+      ],
+      isLabeled: false
     };
 
     var graph2 = {
-        isWeighted: true,
-        edges: [
-            {src: 0, dst: 0, weight: 1, $$hashKey: 'object:319'},
-        ],
+      isWeighted: true,
+      edges: [
+        {src: 0, dst: 0, weight: 1, $$hashKey: 'object:319'},
+      ],
         isDirected: true,
-        vertices : [
+        vertices: [
             {x: 283.5625, y: 72.95833587646484, label: '', $$hashKey: 'object:352'},
             {x: 281.5625, y: 182.9583282470703, label: '', $$hashKey: 'object:368'}
         ],
