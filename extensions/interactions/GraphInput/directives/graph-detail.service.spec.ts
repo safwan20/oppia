@@ -62,7 +62,7 @@ describe('GraphDetailService', () => {
     };
 
     expect(gds.getDirectedEdgeArrowPoints(graph1, 0)).toBe(
-        '196,50 186,45 186,55');
+      '196,50 186,45 186,55');
     expect(gds.getDirectedEdgeArrowPoints(graph2, 0)).toBe('');
   });
 
