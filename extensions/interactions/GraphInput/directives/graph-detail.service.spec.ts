@@ -39,7 +39,7 @@ describe('GraphDetailService', () => {
         {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
         {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
       ],
-        isDirected: true,
+      isDirected: true,
       vertices: [
         {x: 150, y: 50, label: '', $$hashKey: 'object:323'},
         {x: 200, y: 50, label: '', $$hashKey: 'object:324'},
@@ -61,7 +61,8 @@ describe('GraphDetailService', () => {
       isLabeled: false
     };
 
-    expect(gds.getDirectedEdgeArrowPoints(graph1, 0)).toBe('196,50 186,45 186,55');
+    expect(gds.getDirectedEdgeArrowPoints(graph1, 0)).toBe
+    ('196,50 186,45 186,55');
     expect(gds.getDirectedEdgeArrowPoints(graph2, 0)).toBe('');
   });
 
