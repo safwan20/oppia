@@ -34,8 +34,8 @@ describe('GraphDetailService', () => {
 
   it('should be able to return directed adge arrow points', () => {
     var graph1 = {
-        isWeighted: true,
-        edges : [
+      isWeighted: true,
+      edges: [
       {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
       {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
         ],
@@ -46,11 +46,11 @@ describe('GraphDetailService', () => {
         {x: 150, y: 100, label: '', $$hashKey: 'object:325'}
         ],
         isLabeled: false
-    }
+    };
 
     var graph2 = {
         isWeighted: true,
-        edges : [
+        edges: [
             {src: 0, dst: 0, weight: 1, $$hashKey: 'object:319'},
         ],
         isDirected: true,
@@ -59,31 +59,31 @@ describe('GraphDetailService', () => {
             {x: 281.5625, y: 182.9583282470703, label: '', $$hashKey: 'object:368'}
         ],
         isLabeled: false
-    }
+    };
 
-    expect(gds.getDirectedEdgeArrowPoints(graph1,0)).toBe('196,50 186,45 186,55');
-    expect(gds.getDirectedEdgeArrowPoints(graph2,0)).toBe('');
+    expect(gds.getDirectedEdgeArrowPoints(graph1, 0)).toBe('196,50 186,45 186,55');
+    expect(gds.getDirectedEdgeArrowPoints(graph2, 0)).toBe('');
   });
 
   it('should be able to return edgecentre', () => {
 
     var graph = {
         isWeighted: true,
-        edges : [
-            {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
-        ],
-        isDirected: true,
-        vertices : [
-            {x: 150, y: 50, label: '', $$hashKey: 'object:327'},
-            {x: 200, y: 50, label: '', $$hashKey: 'object:328'}
-        ],
-        isLabeled: false
-    }
+        edges: [
+        {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
+      ],
+      isDirected: true,
+        vertices: [
+        {x: 150, y: 50, label: '', $$hashKey: 'object:327'},
+        {x: 200, y: 50, label: '', $$hashKey: 'object:328'}
+      ],
+      isLabeled: false
+    };
 
     var index = 0;
 
     var result =  {x: 175, y: 50};
 
-    expect(gds.getEdgeCentre(graph,index)).toEqual(result);
+    expect(gds.getEdgeCentre(graph, index)).toEqual(result);
   });
 });
