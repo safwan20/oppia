@@ -17,8 +17,6 @@
  */
 import { TestBed } from '@angular/core/testing';
 
-import { AnswerGroup, AnswerGroupObjectFactory } from
-  'domain/exploration/AnswerGroupObjectFactory';
 import { GraphDetailService } from
   'interactions/GraphInput/directives/graph-detail.service.ts';
 
@@ -29,7 +27,7 @@ describe('GraphDetailService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [GraphDetailService]
-    })
+    });
 
     gds = TestBed.get(GraphDetailService);
   });
@@ -38,14 +36,14 @@ describe('GraphDetailService', () => {
     var graph1 = {
         isWeighted: true,
         edges : [
-            {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
-            {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
+      {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
+      {src: 1, dst: 2, weight: 1, $$hashKey: 'object:320'}
         ],
         isDirected: true,
         vertices : [
-            {x: 150, y: 50, label: '', $$hashKey: 'object:323'},
-            {x: 200, y: 50, label: '', $$hashKey: 'object:324'},
-            {x: 150, y: 100, label: '', $$hashKey: 'object:325'}
+        {x: 150, y: 50, label: '', $$hashKey: 'object:323'},
+        {x: 200, y: 50, label: '', $$hashKey: 'object:324'},
+        {x: 150, y: 100, label: '', $$hashKey: 'object:325'}
         ],
         isLabeled: false
     }
@@ -63,12 +61,11 @@ describe('GraphDetailService', () => {
         isLabeled: false
     }
 
-
     expect(gds.getDirectedEdgeArrowPoints(graph1,0)).toBe('196,50 186,45 186,55');
     expect(gds.getDirectedEdgeArrowPoints(graph2,0)).toBe('');
   });
 
-  fit('should be able to return edgecentre', () => {
+  it('should be able to return edgecentre', () => {
 
     var graph = {
         isWeighted: true,
