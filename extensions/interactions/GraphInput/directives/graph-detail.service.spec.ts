@@ -55,10 +55,10 @@ describe('GraphDetailService', () => {
       ],
         isDirected: true,
         vertices: [
-            {x: 283.5625, y: 72.95833587646484, label: '', $$hashKey: 'object:352'},
-            {x: 281.5625, y: 182.9583282470703, label: '', $$hashKey: 'object:368'}
-        ],
-        isLabeled: false
+        {x: 283.5625, y: 72.95833587646484, label: '', $$hashKey: 'object:352'},
+        {x: 281.5625, y: 182.9583282470703, label: '', $$hashKey: 'object:368'}
+      ],
+      isLabeled: false
     };
 
     expect(gds.getDirectedEdgeArrowPoints(graph1, 0)).toBe('196,50 186,45 186,55');
@@ -66,14 +66,13 @@ describe('GraphDetailService', () => {
   });
 
   it('should be able to return edgecentre', () => {
-
     var graph = {
-        isWeighted: true,
-        edges: [
+      isWeighted: true,
+      edges: [
         {src: 0, dst: 1, weight: 1, $$hashKey: 'object:319'},
       ],
       isDirected: true,
-        vertices: [
+      vertices: [
         {x: 150, y: 50, label: '', $$hashKey: 'object:327'},
         {x: 200, y: 50, label: '', $$hashKey: 'object:328'}
       ],
